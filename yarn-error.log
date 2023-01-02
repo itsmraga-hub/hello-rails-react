@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\user.DESKTOP-2TIQI26\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-router-dom@6
+  C:\Program Files\nodejs\node.exe C:\Users\user.DESKTOP-2TIQI26\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add redux react-redux
 
 PATH: 
   C:\Users\user.DESKTOP-2TIQI26\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\user.DESKTOP-2TIQI26\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\heroku\bin;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\gnupg\bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;C:\HashiCorp\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Users\{user}\AppData\Roaming\npm\ or C;C:\Program Files\Git\Users\user.DESKTOP-2TIQI26\AppData\Roaming\npm\node_modules\netlify-cli;C:\Program Files\PostgreSQL\15\bin;C:\Program Files\PostgreSQL\15\lib;C:\Program Files\PuTTY;C:\Users\user.DESKTOP-2TIQI26\AppData\Roaming\npm;C:\Ruby31-x64\bin;C:\Users\user.DESKTOP-2TIQI26\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\user.DESKTOP-2TIQI26\AppData\Local\Programs\Python\Python39;C:\Program Files (x86)\Falcon\MinGW\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Falcon\MinGW\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\user.DESKTOP-2TIQI26\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.2\bin;C:\Users\user.DESKTOP-2TIQI26\AppData\Local\Programs\Microsoft VS Code\bin;C:\Wind;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -25,6 +25,7 @@ npm manifest:
       "@hotwired/turbo-rails": "^7.2.4",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
+      "react-router-dom": "6",
       "webpack": "^5.75.0",
       "webpack-cli": "^5.0.1"
     },
@@ -1076,6 +1077,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.0.4.tgz#70a3ca56809f7aaabb80af2f9c01ae51e1a8ed41"
     integrity sha512-tz4oM+Zn9CYsvtyicsa/AwzKZKL+ITHWkhiu7x+xF77clh2b4Rm+s6xnOgY/sGDWoFWZmtKsE95hxBPkgQQNnQ==
   
+  "@remix-run/router@1.2.1":
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.2.1.tgz#812edd4104a15a493dda1ccac0b352270d7a188c"
+    integrity sha512-XiY0IsyHR+DXYS5vBxpoBe/8veTeoRpMHP+vDosLZxL5bnpetzI0igkxkLZS235ldLzyfkxF+2divEwWHP3vMQ==
+  
   "@types/eslint-scope@^3.7.3":
     version "3.7.4"
     resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.4.tgz#37fc1223f0786c39627068a12e94d6e6fc61de16"
@@ -1812,6 +1818,21 @@ Lockfile:
     dependencies:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
+  
+  react-router-dom@6:
+    version "6.6.1"
+    resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.6.1.tgz#1b96ec0b2cefa7319f1251383ea5b41295ee260d"
+    integrity sha512-u+8BKUtelStKbZD5UcY0NY90WOzktrkJJhyhNg7L0APn9t1qJNLowzrM9CHdpB6+rcPt6qQrlkIXsTvhuXP68g==
+    dependencies:
+      "@remix-run/router" "1.2.1"
+      react-router "6.6.1"
+  
+  react-router@6.6.1:
+    version "6.6.1"
+    resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.6.1.tgz#17de6cf285f2d1c9721a3afca999c984e5558854"
+    integrity sha512-YkvlYRusnI/IN0kDtosUCgxqHeulN5je+ew8W+iA1VvFhf86kA+JEI/X/8NqYcr11hCDDp906S+SGMpBheNeYQ==
+    dependencies:
+      "@remix-run/router" "1.2.1"
   
   react@^18.2.0:
     version "18.2.0"
