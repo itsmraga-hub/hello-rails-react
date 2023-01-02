@@ -1,15 +1,16 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+
 import Greeting from './Greeting';
-import { Route, Routes, Link } from 'react-router-dom';
+import Home from './Home';
 
 const App = () => {
   return (
   <>
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/greeting" element={<Greeting/>}/>
     </Routes>
-    <h1>Welcome to main page</h1>
-    <Link to="/greeting">Click to generate random message</Link>
   </>);
 }
 
